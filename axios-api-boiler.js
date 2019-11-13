@@ -38,7 +38,7 @@ export function postTenantToAPI(data) {
 
 //2)
 //GET
-let response = await axios.get('url')
+let response = await axios.get('url', {headers: {'X-ACCESS-TOKEN': 'token’}, params: {key:value}})
 console.log(response.message)
 
 //POST
